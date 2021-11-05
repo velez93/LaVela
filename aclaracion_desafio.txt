@@ -1,0 +1,5 @@
+Modificaciones de la entrega:
+	-Se modifica la etiqueta title pasando a ser personalizada en cada html.
+	-Agregué keywords y descripción unicas a cada html. 
+	-Optimización del peso de las imagenes de todo el sitio.
+	-Incorporé el icono que acompaña la etiqueta "title"
