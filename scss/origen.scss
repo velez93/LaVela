@@ -1,17 +1,574 @@
-.casillaContacto {
-    width: 50%+5%;
-   
-    
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Suez One', serif;
+	
 }
 
-.form-control{
-    margin-bottom: 80px-30px;
+.encabezado{
+    font-size: 5rem;
+    padding-top: 2em;
+    color: #FFD600;
+    text-align: center;
+    margin: auto;
+    text-shadow:1px 1px 5px rgb(143, 142, 142);
     
 }
+.fondoVela {
+	position: flex;
+	background-repeat: repeat;
+	width: 100%;
+	background-image: url(../img/fondo.jpg);
+	padding-bottom: 100px;
+}
+
+header {
+	width: 100%;
+	height: 800px;
+	background:-webkit-linear-gradient(to right, #414345a9, #232526af), url(../img/vela.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:linear-gradient(to right, #414345a9, #232526af), url(../img/vela.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:50%;
+    position: relative;
+
+    nav {
+        text-align: right;
+        padding: 30px 50px 0 0;
+    
+        .submenu a {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            font-weight: 300;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        
+        .submenu a:hover {
+        
+            text-shadow: 2px 1px 3px rgb(245, 245, 217);
+        }
+    }
+
+    .wave  {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+    }
+    .textos-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            font-size: 110px;
+            padding-top: 40px;
+            color: white;
+        }
+        h2{
+            font-family: 'Roboto Slab', serif;
+            font-size: 40px;
+            font-weight: 100;
+            color: white;
+            margin-top: 0px;
+        }
+    }
+    .submenu {
+        ul{
+        list-style: none;
+        font-size: 0;
+        }
+        li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        }
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+        text-align: center;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul{
+        display: block;
+    }
+
+    
+}
+.tituloFooter {
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 1.5em;
+    text-shadow: 0px 0px 5px white;
+    
+}
+footer {
+	background-image: url(../img/velafooter.jpg);
+	width: 100%;
+	height: 250px;
+    
+    .seguirRedes {
+        display: flex;
+        text-shadow: 0px 0px 3px white;
+        padding-top: 1.5em;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+    #facebook {
+        justify-content: space-between;
+        
+        width: 2em;
+        height: 2em;
+        
+        display: flex;
+    }
+}
+
+.productosTienda {
+	padding-top: 50px;
+	width: 75%;
+	justify-content: center;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	gap: 20px;
+    .articulos {
+        padding: .3em;
+        background-color: #fdfdfbb9;
+        border:  solid 2px #ffd500c0;
+        margin: .5em .5em;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+            padding: 1em;
+            margin-top: 1em;
+            background-color: #ffd5009f;
+            align-items: center;
+            border-radius: 10px;
+        }
+        h4 {
+            display: flex;
+            justify-content: right;
+        }
+    }
+}
+	
+.contenedor {
+	overflow: hidden;
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 20px;
+    
+    .contenedor-conciertos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .card {
+        box-shadow:  rgb(59, 56, 56)  1px 1px 10px 0px;
+        border-radius: 10px;
+        min-height: 200px;
+        font-weight: bold;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        .textos {
+            color: rgb(255, 255, 255);
+            text-shadow: black 2px 2px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+}
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	box-shadow:  rgb(59, 56, 56) 1px 1px 20px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #FFD600;
+	font-size: 20px;
+    ul {
+        list-style: none;
+        color: white;
+        font-size: 18px;
+        text-shadow: black 2px 2px;
+        li {
+            margin: 15px;
+            font-weight: bold;
+        }
+    }
+    .boton {
+        background: #FFD600;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }
+}
+
+
+article {
+    .bio {
+	    width: 90%;
+	    max-width: 1300px;
+	    height: 80vh;
+	    margin: auto;
+	    padding: 100px 0;
+	    display: flex;
+	    border-radius: 20px;
+    }
+    .textoBio {
+	    text-decoration: none;
+	    color: white;
+	    font-size: 5rem;
+	    justify-content: center;
+	    align-content: center;
+	    margin: auto;
+    }
+    .textoBio:hover {
+        text-shadow:  #ffD600 1px 1px 5px;
+        color: #ffD600;
+        transition: 400ms;
+        text-shadow:black 0 2px 5px;
+    }
+}
+.contenedorIntegrantes {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	}
+
+.contenedor-cabeza {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    .cadaUno {
+        box-shadow:  rgb(59, 56, 56)  1px 1px 10px 0px;
+        
+        min-height: 300px;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        font-size: 2rem;
+        .info {
+            color: rgb(255, 255, 255);
+            text-shadow: black 2px 2px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+            padding: 20px;
+            transition: all 1s;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFD600;
+            }
+        }
+    }
+}
+h2 {
+	text-shadow: 2px 2px black;
+	
+}
+p {
+	background-color: rgba(20, 20, 20, 0.486);
+	border-radius: 20px;
+}
+
+.descarga{
+
+	background-color: rgba(255, 255, 255, 0.486);
+	font-size: 2em;
+	color: #FFD600;
+	align-items: baseline;
+	font-family: "Suez One";
+	padding: 20px;
+	border: solid 2px #ffd500a4;
+}
+
+.casillaContacto {
+	margin: 0px 100px;
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.658);
+	
+}
+
+
+
+.enviar{
+	margin-bottom: 10px;
+}
+
 
 .gracias {
-    font-size: 0.6rem*2;
+	color: #fff;
+	border-radius: 0px;
+	padding: 10px;
 }
+.carrusel {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+}
+
+/**********************************************************
+*****************RESPONSIVE********************************
+***********************************************************
+***********************************************************/
+
+/*Smartphone**********************************
+**********************************************
+**********************************************/
+@media (max-width: 600px) {
+    .carrusel {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+    }
+    .tituloFooter {
+        color: black;
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 0px 0px 5px white;
+        
+    }
+    .productosTienda {
+        padding-top: 50px;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        gap: 1em;}
+
+	.textos-header h2 {
+		display: none;
+	}
+    .encabezado{
+        font-size: 2rem;
+    }
+    .wave {
+        display: none;
+    }
+    header nav{
+        padding: 2em 0 0 0;
+    }
+	nav ul{
+		display: flex;
+        justify-content: center;
+		margin: auto;
+		
+        flex-direction: column;
+        text-align: center;
+        
+	}
+    
+    .contenedor {
+        overflow: hidden;
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+        
+        .contenedor-conciertos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        
+    
+    }
+      
+
+	.card {
+		padding: 5px;
+	}
+
+	.bio{
+		justify-content: center;
+		margin: auto;
+	}
+
+
+    .descarga{
+        display: flex;
+		font-size: 1.3em;
+        
+	}
+
+	.contenidoFooter{
+		margin: 0 1em;
+		
+	}
+
+	.seguirRedes{
+		font-size: 1.2em;
+	}
+
+	ul li:hover ul{
+		display: none;
+		
+	}
+    header {
+        width: 100%;
+        height: 800px;
+        background:-webkit-linear-gradient(to right, #414345a9, #232526af), url(../img/vela.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background:linear-gradient(to right, #414345a9, #232526af), url(../img/vela.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        background-attachment:fixed;
+        background-size:cover;
+        background-position:50%;
+        position: relative;
+    
+    
+        .textos-header{
+            height: auto;
+            display: flex;
+            width: 80%;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            
+            h1{
+                font-size: 3em;
+                margin: auto;
+                padding-top: 3em;
+                color: white;
+            }
+         
+        }
+        .submenu {
+            width: 80%;
+            justify-content: center;
+            display: flex;
+            ul{
+            list-style: none;
+            font-size: 0;
+            }
+            li {
+            display: inline-block;
+    
+            font-size: 1.5em;
+            }
+        }
+    
+        
+    }
+}
+/*FinSmartphone**********************************
+**********************************************
+**********************************************/
+
+
+
+
+/*TABLET**********************************
+**********************************************
+**********************************************/
+@media (min-width:601px) and (max-width:1023px){
+	.textos-header h1 {
+		font-size: 4rem;
+		padding: 0px;
+}
+.tituloFooter {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1.5rem;
+    text-shadow: 0px 0px 5px white;
+    
+}
+	.textos-header h2 {
+		font-size: 2rem;
+	}
+
+	nav {
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+
+	.contenedor-conciertos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5px;
+	}
+
+	.card {
+		padding: 5px;
+	}
+
+	.bio{
+		justify-content: center;
+		margin: auto;
+	}
+}
+
+/*FinTablet**********************************
+**********************************************
+**********************************************/
+
+
+
+
+
+
 
 
     
