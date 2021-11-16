@@ -1,12 +1,666 @@
-.casillaContacto {
-  width: 55%;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Suez One', serif;
 }
 
-.form-control {
-  margin-bottom: 50px;
+.encabezado {
+  font-size: 5rem;
+  padding-top: 2em;
+  color: #FFD600;
+  text-align: center;
+  margin: auto;
+  text-shadow: 1px 1px 5px #8f8e8e;
+}
+
+.fondoVela {
+  position: flex;
+  background-repeat: repeat;
+  width: 100%;
+  background-image: url(../img/fondo.jpg);
+  padding-bottom: 100px;
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-gradient(linear, left top, right top, from(#414345a9), to(#232526af)), url(../img/vela.jpg);
+  background: linear-gradient(to right, #414345a9, #232526af), url(../img/vela.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+header nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+header nav .submenu a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+header nav .submenu a:hover {
+  text-shadow: 2px 1px 3px #f5f5d9;
+}
+
+header .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+header .textos-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 430px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+header .textos-header h1 {
+  font-size: 110px;
+  padding-top: 40px;
+  color: white;
+}
+
+header .textos-header h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  font-weight: 100;
+  color: white;
+  margin-top: 0px;
+}
+
+header .submenu ul {
+  list-style: none;
+  font-size: 0;
+}
+
+header .submenu li {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+}
+
+header ul ul {
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+
+header ul ul li {
+  display: block;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+.tituloFooter {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 1.5em;
+  text-shadow: 0px 0px 5px white;
+}
+
+footer {
+  background-image: url(../img/velafooter.jpg);
+  width: 100%;
+  height: 250px;
+}
+
+footer .seguirRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-shadow: 0px 0px 3px white;
+  padding-top: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+}
+
+footer #facebook {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 2em;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productosTienda {
+  padding-top: 50px;
+  width: 75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  gap: 20px;
+}
+
+.productosTienda .articulos {
+  padding: .3em;
+  background-color: #fdfdfbb9;
+  border: solid 2px #ffd500c0;
+  margin: .5em .5em;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productosTienda .articulos h3 {
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #ffd5009f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.productosTienda .articulos h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.contenedor {
+  overflow: hidden;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.contenedor .contenedor-conciertos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contenedor .card {
+  -webkit-box-shadow: #3b3838 1px 1px 10px 0px;
+          box-shadow: #3b3838 1px 1px 10px 0px;
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contenedor .card .textos {
+  color: white;
+  text-shadow: black 2px 2px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: #3b3838 1px 1px 20px 0px;
+          box-shadow: #3b3838 1px 1px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFD600;
+  font-size: 20px;
+}
+
+.banner ul {
+  list-style: none;
+  color: white;
+  font-size: 18px;
+  text-shadow: black 2px 2px;
+}
+
+.banner ul li {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.banner .boton {
+  background: #FFD600;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+article .bio {
+  width: 90%;
+  max-width: 1300px;
+  height: 80vh;
+  margin: auto;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+}
+
+article .textoBio {
+  text-decoration: none;
+  color: white;
+  font-size: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+}
+
+article .textoBio:hover {
+  text-shadow: #ffD600 1px 1px 5px;
+  color: #ffD600;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  text-shadow: black 0 2px 5px;
+}
+
+.contenedorIntegrantes {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.contenedor-cabeza {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.contenedor-cabeza .cadaUno {
+  -webkit-box-shadow: #3b3838 1px 1px 10px 0px;
+          box-shadow: #3b3838 1px 1px 10px 0px;
+  min-height: 300px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  font-size: 2rem;
+}
+
+.contenedor-cabeza .cadaUno .info {
+  color: white;
+  text-shadow: black 2px 2px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+}
+
+.contenedor-cabeza .cadaUno .info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFD600;
+}
+
+h2 {
+  text-shadow: 2px 2px black;
+}
+
+p {
+  background-color: rgba(20, 20, 20, 0.486);
+  border-radius: 20px;
+}
+
+.descarga {
+  background-color: rgba(255, 255, 255, 0.486);
+  font-size: 2em;
+  color: #FFD600;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: "Suez One";
+  padding: 20px;
+  border: solid 2px #ffd500a4;
+}
+
+.casillaContacto {
+  margin: 0px 100px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.658);
+}
+
+.enviar {
+  margin-bottom: 10px;
 }
 
 .gracias {
-  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 0px;
+  padding: 10px;
 }
+
+.carrusel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/**********************************************************
+*****************RESPONSIVE********************************
+***********************************************************
+***********************************************************/
+/*Smartphone**********************************
+**********************************************
+**********************************************/
+@media (max-width: 600px) {
+  .carrusel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tituloFooter {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0px 0px 5px white;
+  }
+  .productosTienda {
+    padding-top: 50px;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+    gap: 1em;
+  }
+  .textos-header h2 {
+    display: none;
+  }
+  .encabezado {
+    font-size: 2rem;
+  }
+  .wave {
+    display: none;
+  }
+  header nav {
+    padding: 2em 0 0 0;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contenedor {
+    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contenedor .contenedor-conciertos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card {
+    padding: 5px;
+  }
+  .bio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .descarga {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.3em;
+  }
+  .contenidoFooter {
+    margin: 0 1em;
+  }
+  .seguirRedes {
+    font-size: 1.2em;
+  }
+  ul li:hover ul {
+    display: none;
+  }
+  header {
+    width: 100%;
+    height: 800px;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-gradient(linear, left top, right top, from(#414345a9), to(#232526af)), url(../img/vela.jpg);
+    background: linear-gradient(to right, #414345a9, #232526af), url(../img/vela.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+  }
+  header .textos-header {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  header .textos-header h1 {
+    font-size: 3em;
+    margin: auto;
+    padding-top: 3em;
+    color: white;
+  }
+  header .submenu {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .submenu ul {
+    list-style: none;
+    font-size: 0;
+  }
+  header .submenu li {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+}
+
+/*FinSmartphone**********************************
+**********************************************
+**********************************************/
+/*TABLET**********************************
+**********************************************
+**********************************************/
+@media (min-width: 601px) and (max-width: 1023px) {
+  .textos-header h1 {
+    font-size: 4rem;
+    padding: 0px;
+  }
+  .tituloFooter {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1.5rem;
+    text-shadow: 0px 0px 5px white;
+  }
+  .textos-header h2 {
+    font-size: 2rem;
+  }
+  nav {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+  .contenedor-conciertos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .card {
+    padding: 5px;
+  }
+  .bio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+}
+
+/*FinTablet**********************************
+**********************************************
+**********************************************/
 /*# sourceMappingURL=origen.css.map */
