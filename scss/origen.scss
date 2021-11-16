@@ -527,6 +527,25 @@ p {
 		font-size: 4rem;
 		padding: 0px;
 }
+.contenedor {
+    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    
+    .contenedor-conciertos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    
+
+}
 .tituloFooter {
     color: black;
     text-align: center;
