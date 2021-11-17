@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Suez One', serif;
@@ -8,7 +7,8 @@
 
 .encabezado {
   font-size: 5rem;
-  padding-top: 2em;
+  padding-top: 1.5em;
+  padding-bottom: .3em;
   color: #FFD600;
   text-align: center;
   margin: auto;
@@ -39,6 +39,7 @@ header {
 header nav {
   text-align: right;
   padding: 30px 50px 0 0;
+  font-size: 1.3em;
 }
 
 header nav .submenu a {
@@ -100,7 +101,7 @@ header .submenu ul {
 header .submenu li {
   display: inline-block;
   position: relative;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 header ul ul {
@@ -436,7 +437,7 @@ p {
 .gracias {
   color: #fff;
   border-radius: 0px;
-  padding: 10px;
+  padding: .7em;
 }
 
 .carrusel {
@@ -444,7 +445,7 @@ p {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 2em;
   width: 80%;
   margin: auto;
   -webkit-box-pack: center;
@@ -502,7 +503,8 @@ p {
     display: none;
   }
   header nav {
-    padding: 2em 0 0 0;
+    margin: auto;
+    padding: 2em 0 0 1em;
   }
   nav ul {
     display: -webkit-box;
@@ -512,6 +514,12 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -592,9 +600,9 @@ p {
     margin: auto;
   }
   header .textos-header h1 {
-    font-size: 3em;
+    font-size: 4em;
     margin: auto;
-    padding-top: 3em;
+    padding-top: 2em;
     color: white;
   }
   header .submenu {
@@ -613,6 +621,10 @@ p {
   header .submenu li {
     display: inline-block;
     font-size: 1.5em;
+  }
+  .casillaContacto {
+    margin: 1em;
+    padding: 1em;
   }
 }
 
@@ -656,10 +668,15 @@ p {
   .textos-header h2 {
     font-size: 2rem;
   }
-  nav {
+  nav ul {
+    justify-items: center;
     text-align: center;
     margin: auto;
-    padding: 0;
+    padding: 0 0 0 0;
+    font-size: 1.3em;
+  }
+  header nav {
+    padding: 1em 0 0 0;
   }
   .contenedor-conciertos {
     display: -ms-grid;
