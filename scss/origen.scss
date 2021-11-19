@@ -251,7 +251,7 @@ article {
     .bio {
 	    width: 90%;
 	    max-width: 1300px;
-	    height: 80vh;
+	    
 	    margin: auto;
 	    padding: 100px 0;
 	    display: flex;
@@ -334,9 +334,11 @@ p {
 }
 
 .casillaContacto {
-	margin: 0px 100px;
-	padding: 50px;
+	margin: auto;
+	padding: 3em;
 	background-color: rgba(255, 255, 255, 0.658);
+    width: 60%;
+    justify-content: center;
 	
 }
 
@@ -518,8 +520,10 @@ p {
         
     }
     .casillaContacto {
-        margin: 1em;
+        margin: auto;
         padding: 1em;
+        justify-content: center;
+        width: 90%;
     }
 }
 /*FinSmartphone**********************************
@@ -594,6 +598,12 @@ p {
 		justify-content: center;
 		margin: auto;
 	}
+    .casillaContacto {
+        margin: auto;
+        padding: 2em;
+        justify-content: center;
+        width: 80%;
+    }
 }
 
 /*FinTablet**********************************
