@@ -310,6 +310,7 @@ footer #facebook {
 article .bio {
   width: 90%;
   max-width: 1300px;
+  height: 500px;
   margin: auto;
   padding: 100px 0;
   display: -webkit-box;
