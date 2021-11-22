@@ -209,42 +209,7 @@ footer {
     }
 
 }
-.banner {
-	border-radius: 10px;
-	text-align: center;
-	padding: 20px;
-	background-size: cover;
-	background-position: center center;
-	box-shadow:  rgb(59, 56, 56) 1px 1px 20px 0px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	color: #FFD600;
-	font-size: 20px;
-    ul {
-        list-style: none;
-        color: white;
-        font-size: 18px;
-        text-shadow: black 2px 2px;
-        li {
-            margin: 15px;
-            font-weight: bold;
-        }
-    }
-    .boton {
-        background: #FFD600;
-        display: block;
-        width: 100%;
-        font-weight: bold;
-        font-size: 14px;
-        text-align: center;
-        padding: 10px;
-        border: none;
-        border-radius: 100px;
-        font-family: 'Roboto', sans-serif;
-        cursor: pointer;
-    }
-}
+
 
 
 article {
@@ -365,6 +330,64 @@ p {
 	justify-content: center;
 }
 
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	box-shadow:  rgb(59, 56, 56) 1px 1px 20px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #FFD600;
+	font-size: 20px;
+    .ciudad {
+        color: white;
+        text-shadow: black 2px 2px;
+        font-weight: bold;
+        border-radius: 0;
+        background-color: rgba(255, 250, 240, 0);
+        
+    }
+    .boton {
+        background: #FFD600;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }
+}
+
+.descripcionDer {
+    text-align: right;
+    font-size: 1em;
+    color: white;
+    margin-top: 2em;
+    h3 {
+        color: #FFD600;
+    }
+
+}
+
+.descripcionIzq {
+    text-align: left;
+    font-size: 1em;
+    color: white;
+    margin-top: 2em;
+    h3 {
+        color: #FFD600;
+    }
+
+}
+
+
 /**********************************************************
 *****************RESPONSIVE********************************
 ***********************************************************
@@ -378,10 +401,12 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         
-        width: 80%;
+        width: 90%;
         margin: auto;
         justify-content: center;
     }
+
+   
     .tituloFooter {
         color: black;
         text-align: center;
