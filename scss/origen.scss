@@ -369,9 +369,17 @@ p {
     text-align: right;
     font-size: 1em;
     color: white;
-    margin-top: 2em;
+    
+    background-color: rgb(88, 88, 88);
+    
     h3 {
         color: #FFD600;
+        padding: 1em;
+        background-color: rgb(26, 25, 25);
+    }
+    p {
+        background-color: rgba(134, 134, 134, 0);
+        padding: 0 1em;
     }
 
 }
@@ -380,9 +388,17 @@ p {
     text-align: left;
     font-size: 1em;
     color: white;
-    margin-top: 2em;
+    
+    background-color: rgb(88, 88, 88);
+    
     h3 {
         color: #FFD600;
+        padding: 1em;
+        background-color: rgb(26, 25, 25);
+    }
+    p {
+        background-color: rgba(134, 134, 134, 0);
+        padding: 0 1em;
     }
 
 }

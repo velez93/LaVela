@@ -457,22 +457,36 @@ p {
   text-align: right;
   font-size: 1em;
   color: white;
-  margin-top: 2em;
+  background-color: #585858;
 }
 
 .descripcionDer h3 {
   color: #FFD600;
+  padding: 1em;
+  background-color: #1a1919;
+}
+
+.descripcionDer p {
+  background-color: rgba(134, 134, 134, 0);
+  padding: 0 1em;
 }
 
 .descripcionIzq {
   text-align: left;
   font-size: 1em;
   color: white;
-  margin-top: 2em;
+  background-color: #585858;
 }
 
 .descripcionIzq h3 {
   color: #FFD600;
+  padding: 1em;
+  background-color: #1a1919;
+}
+
+.descripcionIzq p {
+  background-color: rgba(134, 134, 134, 0);
+  padding: 0 1em;
 }
 
 /**********************************************************
